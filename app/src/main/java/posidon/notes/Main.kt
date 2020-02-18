@@ -2,17 +2,14 @@ package posidon.notes
 
 import android.app.Dialog
 import android.os.Bundle
-import android.view.*
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
+import android.view.View
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.widget.EditText
-import android.widget.PopupWindow
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
 import kotlinx.android.synthetic.main.main.*
+
 
 class Main : AppCompatActivity() {
 
