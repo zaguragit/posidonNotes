@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#000000</color>
+    <color name="fg">#e2e2e2</color>
+    <color name="card_hint">#3300ddff</color>
+    <color name="card_bg">#aa0d1216</color>
+    <color name="card_border">#1d222a</color>
+    <color name="accent">#17C25B</color>
+    <color name="very_translucent_accent">#2417C25B</color>
+    <color name="destructive">#F54727</color>
+    <color name="very_translucent_destructive">#24EB2F0E</color>
+</resources>
