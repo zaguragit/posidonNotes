@@ -10,17 +10,15 @@ object Notes {
 
     private lateinit var notes: ArrayList<String>
 
+    val length: Int get() = notes.size
+
     fun init(context: Context) {
         notes = FileStuff.readData(context)
     }
 
     operator fun get(i: Int) = notes[i]
     operator fun set(i: Int, str: String) { notes[i] = str }
-
     fun add(str: String) = notes.add(str)
-
-    val length: Int get() = notes.size
-
     fun save(context: Context) = FileStuff.writeData(notes, context)
 
     fun edit(i: Int, context: Context, adapter: NoteAdapter) {

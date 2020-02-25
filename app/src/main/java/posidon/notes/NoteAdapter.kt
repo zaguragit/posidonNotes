@@ -16,7 +16,6 @@ class NoteAdapter(
     }
 
     override fun getItemCount() = Notes.length
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
         ViewHolder(LayoutInflater.from(context).inflate(R.layout.note_card, parent, false))
 

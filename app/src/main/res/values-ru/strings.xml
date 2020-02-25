@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">posidon notes</string>
+    <string name="card_edition_hint" tools:ignore="TypographyEllipsis">Пишите здесь...</string>
+    <string name="done">Сделано</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отменить</string>
+</resources>

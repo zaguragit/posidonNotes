@@ -14,16 +14,12 @@ object FileStuff {
     fun writeData(
         notes: ArrayList<String>,
         context: Context
-    ) {
-        try {
-            val fos = context.openFileOutput(NOTES_FILENAME, Context.MODE_PRIVATE)
-            val oos = ObjectOutputStream(fos)
-            oos.writeObject(notes)
-            oos.close()
-        } catch (e: IOException) {
-            e.printStackTrace()
-        }
-    }
+    ) = try {
+        val fos = context.openFileOutput(NOTES_FILENAME, Context.MODE_PRIVATE)
+        val oos = ObjectOutputStream(fos)
+        oos.writeObject(notes)
+        oos.close()
+    } catch (e: IOException) { e.printStackTrace() }
 
     fun readData(context: Context): ArrayList<String> = try {
         val fis = context.openFileInput(NOTES_FILENAME)
